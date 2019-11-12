@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appui.Controller">
+   <children>
+      <HBox fx:id="hbox" layoutX="22.0" prefHeight="825.0" prefWidth="804.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="0.0" />
+      <ListView fx:id="feedListView" layoutX="46.0" layoutY="47.0" maxWidth="-Infinity" onMouseClicked="#displayEntry" prefHeight="732.0" prefWidth="400.0" />
+      <Button layoutX="46.0" layoutY="13.0" mnemonicParsing="false" onAction="#addFeedsPopup" prefHeight="27.0" prefWidth="67.0" text="Button" />
+      <ListView fx:id="itemListView" layoutX="373.0" layoutY="49.0" onMouseClicked="#displayBody" prefHeight="509.0" prefWidth="437.0" />
+      <TextArea fx:id="body" layoutX="373.0" layoutY="597.0" prefHeight="181.0" prefWidth="437.0" wrapText="true" />
+   </children>
+</AnchorPane>
